@@ -11,6 +11,7 @@ function preload() {
   img1 = loadImage('https://milesmunoz9.github.io/game/fly.png');
   img2 = loadImage('https://milesmunoz9.github.io/game/wood.jpg'); //background L1
   beginImg = loadImage('https://milesmunoz9.github.io/game/wood.jpg');
+  cursor = LoadImage('https://milesmunoz9.github.io/game/swat.png');
 }
 
 function setup() {
@@ -19,7 +20,9 @@ function setup() {
   fill(c);
   textAlign(CENTER);
   textSize(20); 
+  cursor("https://milesmunoz9.github.io/game/swatter.png", 0, 0);
 } // end of setup
+
 
 
 function draw() {
@@ -103,11 +106,3 @@ function levelThree(){
 function win(){
   text("You Won", width/2, height-20);
 } // end win
-
-// Change the cursor's active spot
-  // when the mouse is pressed.
-  if (mouseIsPressed === true) {
-    cursor('https://milesmunoz9.github.io/game/swat.jpg', 8, 8);
-  } else {
-    cursor('https://milesmunoz9.github.io/game/swat.jpg');
-  }
