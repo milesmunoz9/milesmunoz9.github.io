@@ -16,7 +16,7 @@ function preload() {
 
 function setup() {
   createCanvas(600, 600);
-  let c =color(200, 100, 100); //text color
+  let c =color(255, 255, 255); //text color
   fill(c);
   textAlign(CENTER);
   textSize(20); 
@@ -59,7 +59,7 @@ function beginGame(){
 
 
 function levelOne(){
-  text("level 1", width/2, height-20);
+  text("level 1: EASY", width/2, height-20);
   var distToBall = dist(ballx+20, bally+20, mouseX, mouseY);
   if (distToBall<ballSize/2){
     ballx= random(width-5);
@@ -75,7 +75,7 @@ function levelOne(){
 
 
 function levelTwo(){
-  text("level 2", width/2, height-20);
+  text("level 2: MEDIUM", width/2, height-20);
   var distToBall = dist(ballx+20, bally+20, mouseX, mouseY);
   if (distToBall<ballSize/2){
     ballx= random(width-5);
@@ -89,7 +89,7 @@ function levelTwo(){
 } // end of level 2
 
 function levelThree(){
-  text("level 3", width/2, height-20);
+  text("level 3: HARD", width/2, height-20);
   var distToBall = dist(ballx+20, bally+20, mouseX, mouseY);
   if (distToBall<ballSize/2){
     ballx= random(width-5);
@@ -104,5 +104,5 @@ function levelThree(){
 } // end level 3
 
 function win(){
-  text("You Won", width/2, height-20);
+  text("ALL FLIES SWATTED!", width/2, height-20);
 } // end win
