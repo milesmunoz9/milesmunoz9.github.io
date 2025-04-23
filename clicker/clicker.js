@@ -1,6 +1,6 @@
 var ballx = 300; // width/2 ?
 var bally = 300;
-var ballSize = 400;
+var ballSize = 65;
 var score =0;
 var img1, img2, beginImg;
 var  c; // our text color as a variable, set in setup
@@ -34,15 +34,15 @@ if(gameState =="L1"){
   levelOne();
 }
 if(gameState =="L2"){
-    background(135);
+    background(img2);
   levelTwo();
 }
 if(gameState =="L3"){
-    background(50);
+    background(img2);
   levelThree();
 }
 if(gameState =="Win"){
-    background(50);
+    background(img2);
   win();
 }
   text(("Score: " + score), width/2, 40);
@@ -103,3 +103,11 @@ function levelThree(){
 function win(){
   text("You Won", width/2, height-20);
 } // end win
+
+// Change the cursor's active spot
+  // when the mouse is pressed.
+  if (mouseIsPressed === true) {
+    cursor('https://milesmunoz9.github.io/game/swat.jpg', 8, 8);
+  } else {
+    cursor('https://milesmunoz9.github.io/game/swat.jpg');
+  }
