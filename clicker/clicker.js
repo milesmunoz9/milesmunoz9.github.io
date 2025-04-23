@@ -1,6 +1,6 @@
-var ballx = 3; // width/2 ?
-var bally = 3;
-var ballSize = 4;
+var ballx = 300; // width/2 ?
+var bally = 300;
+var ballSize = 400;
 var score =0;
 var img1, img2, beginImg;
 var  c; // our text color as a variable, set in setup
@@ -8,7 +8,7 @@ var gameState ="begin";
 
 function preload() {
 
-  img1 = loadImage('https://milesmunoz9.github.io/game/flynew.png');
+  img1 = loadImage('https://milesmunoz9.github.io/game/fly.png');
   img2 = loadImage('https://milesmunoz9.github.io/game/wood.jpg'); //background L1
   beginImg = loadImage('https://milesmunoz9.github.io/game/wood.jpg');
 }
